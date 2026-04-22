@@ -111,6 +111,10 @@
   border-radius: 5px;
 }
 
+.left-btn a{
+  text-decoration: none;
+}
+
 .right img {
   max-height: 320px;
   height: auto;
