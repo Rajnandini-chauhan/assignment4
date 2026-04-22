@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laundry Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navdiv">
+    <img src="https://static.vecteezy.com/system/resources/previews/005/513/423/non_2x/laundry-clean-and-fresh-design-logo-vector.jpg">
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <button>Username</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main class="hero">
+  <div class="left">
+    <h1>Revitalize Your Clothes with Expert</h1>
+    <h2>Laundry Services!</h2>
+    <p>
+      Experience professional laundry services with doorstep convenience.
+    </p>
+    <button class="left-btn">Book a service today!</button>
+  </div>
+
+  <div class="right">
+    <img src="https://static.vecteezy.com/system/resources/previews/002/382/825/non_2x/laundry-service-design-concept-illustration-vector.jpg">
+  </div>
+</main>
+
+<!-- ACHIEVEMENTS -->
+<div class="achievements">
+  <h2>Our Achievements</h2>
+  <p>15+ Services | 240+ Customers | 2+ Years Experience</p>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+
+<div class="booking-grid">
+
+  <!-- LEFT -->
+  <div class="services-list-card">
+    <h3>Our Services</h3>
+    <div id="services-list"></div>
+  </div>
+
+  <!-- RIGHT -->
+  <div>
+
+    <div class="cart-card">
+      <h4>Added Items</h4>
+
+      <div id="cart-empty-state" class="cart-empty">
+        No items added yet
+      </div>
+
+      <table id="cart-table" class="cart-table" style="display:none;">
+        <tbody id="cart-body"></tbody>
+      </table>
+
+      <h3 id="total-amount">₹0</h3>
+    </div>
+
+    <div class="book-card">
+      <h4>Book Now</h4>
+
+      <input type="text" id="book-name" placeholder="Full Name">
+      <input type="email" id="book-email" placeholder="Email">
+      <input type="tel" id="book-phone" placeholder="Phone">
+
+      <button class="btn-book" onclick="bookNow()">Book now</button>
+
+      <div id="book-success" class="book-success">
+        Booking Successful!
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
